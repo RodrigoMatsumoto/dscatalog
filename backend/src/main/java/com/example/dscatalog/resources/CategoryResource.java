@@ -1,6 +1,6 @@
 package com.example.dscatalog.resources;
 
-import com.example.dscatalog.entities.Category;
+import com.example.dscatalog.dto.CategoryDTO;
 import com.example.dscatalog.services.CategoryService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,8 +20,8 @@ public class CategoryResource {
   }
   
   @GetMapping
-  public ResponseEntity<List<Category>> findAll() {
-    List<Category> list = service.findAll();
+  public ResponseEntity<List<CategoryDTO>> findAll() {
+    List<CategoryDTO> list = service.findAll();
     
     return ResponseEntity.ok().body(list);
   }

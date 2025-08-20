@@ -1,5 +1,6 @@
 package com.example.dscatalog.services;
 
+import com.example.dscatalog.dto.CategoryDTO;
 import com.example.dscatalog.entities.Category;
 import com.example.dscatalog.repositories.CategoryRepository;
 import org.springframework.stereotype.Service;
@@ -17,8 +18,10 @@ public class CategoryService {
   }
   
   @Transactional(readOnly = true)
-  public List<Category> findAll() {
-    return repository.findAll();
+  public List<CategoryDTO> findAll() {
+    List<Category> list = repository.findAll();
+    
+    return list.stream().map(CategoryDTO::new).toList();
   }
   
 }
