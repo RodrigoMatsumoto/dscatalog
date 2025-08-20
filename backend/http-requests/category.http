@@ -8,3 +8,10 @@ GET {{host}}/categories/1
 Content-Type: application/json
 
 ###
+# @name Create a new category
+POST {{host}}/categories
+Content-Type: application/json
+
+{
+  "name": "Garden"
+}
