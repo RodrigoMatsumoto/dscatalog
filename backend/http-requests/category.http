@@ -15,3 +15,12 @@ Content-Type: application/json
 {
   "name": "Garden"
 }
+
+###
+# @name Update category by id
+PUT {{host}}/categories/4
+Content-Type: application/json
+
+{
+  "name": "Garden Updated"
+}
