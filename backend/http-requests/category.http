@@ -1,5 +1,5 @@
-# @name Get all categories
-GET {{host}}/categories
+# @name Get all categories (paginated search)
+GET {{host}}/categories?page=0&linesPerPage=5&direction=ASC&orderBy=name
 Content-Type: application/json
 
 ###
