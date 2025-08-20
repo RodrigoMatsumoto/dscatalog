@@ -1,5 +1,0 @@
-### Get all categories
-GET {{host}}/categories
-Content-Type: application/json
-
-###

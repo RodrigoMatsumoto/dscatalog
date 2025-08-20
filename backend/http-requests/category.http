@@ -1,0 +1,10 @@
+# @name Get all categories
+GET {{host}}/categories
+Content-Type: application/json
+
+###
+# @name Get category by id
+GET {{host}}/categories/1
+Content-Type: application/json
+
+###
