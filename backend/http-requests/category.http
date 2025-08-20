@@ -24,3 +24,10 @@ Content-Type: application/json
 {
   "name": "Garden Updated"
 }
+
+###
+# @name Delete category by id
+DELETE {{host}}/categories/1000
+Content-Type: application/json
+
+###
