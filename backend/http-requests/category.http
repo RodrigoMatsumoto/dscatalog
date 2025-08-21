@@ -4,7 +4,7 @@ Content-Type: application/json
 
 ###
 # @name Get category by id
-GET {{host}}/categories/1
+GET {{host}}/categories/4
 Content-Type: application/json
 
 ###
@@ -27,7 +27,7 @@ Content-Type: application/json
 
 ###
 # @name Delete category by id
-DELETE {{host}}/categories/1000
+DELETE {{host}}/categories/4
 Content-Type: application/json
 
 ###
